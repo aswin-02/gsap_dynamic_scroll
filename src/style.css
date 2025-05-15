@@ -1,0 +1,244 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img{
+  user-select: none;
+  pointer-events: none;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.model-section {
+  position: absolute;
+  height: 300vh;
+  overflow: hidden;
+}
+
+#model-container {
+  position: fixed;
+  pointer-events: none;
+  user-select: none;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.content-section {
+  padding: 5rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 300vh;
+}
+
+.content-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #168eb3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #80e1ff;
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.model-info {
+  position: relative;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 300px;
+}
+
+.model-info p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.section-one {
+  background-image: url("../public/assets/Phonewallpaper.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-two {
+  height: 100vh;
+  background-color: #00000d;
+}
+
+.section-three {
+  height: 200vh;
+  background: linear-gradient(to bottom, #00000d, #2552b8);
+}
+
+.scroll-container {
+  display: flex;
+  width: auto;
+  height: 100vh;
+}
+
+.section-four {
+  flex: 0 0 200vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-footer {
+  outline: 1px solid #6680cb;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents any overflow */
+  position: relative; /* For absolute positioning if needed */
+}
+
+.river-img {
+  width: 100%; /* Makes image width 100% of its container */
+  height: 100%; /* Makes image height 100% of its container */
+  object-fit: cover; /* This maintains aspect ratio while covering the container */
+}
+
+.section-2 {
+  flex: 0 0 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue; 
+}
+.section-3 {
+  flex: 0 0 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray; 
+}
+
+.house-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cloud-1{
+  width: 150%;
+  position: absolute;
+  z-index: 999;
+}
+
+.cloud-2{
+  width: 150%;
+  position: absolute;
+  z-index: 999;
+}
+
+.cloud-3{
+  width: 150%;
+  position: absolute;
+  z-index: 999;
+}
+
+.cloud-4{
+  width: 150%;
+  position: absolute;
+  z-index: 999;
+}
+
+.house-img{
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.shinchan-fly {
+  height: 25%;
+  position: absolute;
+}
+
+@media only screen and (max-width: 460px) {
+  .cloud-1{
+    width: 500%;
+  }
+  .cloud-2{
+    width: 500%;
+  }
+  .cloud-3{
+    width: 500%;
+  }
+  .cloud-4{
+    width: 500%;
+  }
+
+  img {
+    width: 70vw;
+  }
+  .section-two {
+    height: 50vh;
+  }
+
+
+  .section-four {
+    /* flex: 0 0 100vw; */
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
