@@ -1,0 +1,21 @@
+# --- NODE ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+
+# --- VSCODE ---
+.vscode/
+
+# --- LOGS ---
+*.log
+
+# --- SYSTEM FILES ---
+.DS_Store
+Thumbs.db
+
+# --- BUILD OUTPUT ---
+dist/
+build/
+public/assets/
