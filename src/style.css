@@ -5,6 +5,36 @@ html {
   overflow-x: hidden;
 }
 
+  .mobile {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background: #171717; /* optional: background to make it visible */
+    z-index: 9999;    /* make sure it's on top */
+  }
+  
+  .mobile img {
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    .desktop{
+      display: none;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .mobile {
+      display: none;
+    }
+  }
+
 img{
   user-select: none;
   pointer-events: none;
