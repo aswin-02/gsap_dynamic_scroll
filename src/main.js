@@ -3,7 +3,19 @@ import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lenis from "@studio-freight/lenis"; // Don't forget to install this
+
 gsap.registerPlugin(ScrollTrigger);
+
+// Init Lenis
+const lenis = new Lenis();
+
+function raf(time){
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
 
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize the 3D scene
