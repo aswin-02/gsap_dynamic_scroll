@@ -8,14 +8,14 @@ import Lenis from "@studio-freight/lenis"; // Don't forget to install this
 gsap.registerPlugin(ScrollTrigger);
 
 // Init Lenis
-const lenis = new Lenis();
+// const lenis = new Lenis();
 
-function raf(time){
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
+// function raf(time){
+//   lenis.raf(time);
+//   requestAnimationFrame(raf);
+// }
 
-requestAnimationFrame(raf);
+// requestAnimationFrame(raf);
 
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize the 3D scene
